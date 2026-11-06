@@ -1,6 +1,6 @@
 
 
-let canFly : boolean = true;
+export let canFly : boolean = true;
 
 let amount: number = 4040;
 

@@ -1,25 +1,26 @@
 
-type Toppings = "chees" | "olive" | "corn"
-type pizza ={
-    name: string 
-    toppings: Toppings[]
-}
+export type Toppings = "chees" | "olive" | "corn";
 
-const p1:pizza ={
-    name:"Arif"
+type Pizza = {
+    name: string;
+    toppings: Toppings[];
+};
+
+// Single Pizza
+const p1: Pizza = {
+    name: "Arif",
     toppings: ["chees"]
-}
+};
 
-const menu: pizza[] = [
+// Multiple Pizza Menu
+const menu: Pizza[] = [
     {
-        name : "pizza 1"
+        name: "pizza 1",
         toppings: ["chees"]
-    }
- {
-        name : "pizza 2"
+    },
+    {
+        name: "pizza 2",
         toppings: ["corn"]
     }
-]
-
-
+];
 

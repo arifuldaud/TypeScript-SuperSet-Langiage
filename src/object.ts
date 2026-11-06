@@ -1,5 +1,5 @@
 
-class Empolyee {
+export class Empolyee {
     name :string;
     baseSalery: number;
 
