@@ -18,13 +18,13 @@ The `tsconfig.json` file is used to configure a TypeScript project. It tells the
 ## TypeScript Project Structure
 
 ```text
-my-project/
+ts-project/
 │
 ├── src/
-│   └── index.ts
+│   └── script.ts
 │
 ├── dist/
-│   └── index.js
+│   └── script.js
 │
 ├── node_modules/
 ├── package.json
