@@ -80,13 +80,3 @@ let os: Omit<Os,"email"> ={
 console.log(os)
 
 
-type studentGrade= Record<string,number>
-
-let grades: StudentGrade = {
-    Ariful: 90,
-    Sharmin: 85,
-    Daud: 95
-};
-
-console.log(grades);
-
