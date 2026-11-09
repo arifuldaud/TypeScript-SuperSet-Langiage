@@ -3,13 +3,9 @@
 ## Introduction
 
 TypeScript is a **superset of JavaScript** that adds static typing and other useful features to make development easier and safer. However, browsers and Node.js cannot execute TypeScript code directly. So, before running it, we need to convert TypeScript code into JavaScript. This process is known as 
-**Compilation**.
-
-TypeScript uses a tool called `tsc` (TypeScript Compiler) to handle this process. It analyzes the code, checks for type errors, and generates JavaScript based on the project's configuration.
+**Compilation**.TypeScript uses a tool called `tsc` (TypeScript Compiler) to handle this process.
 
 ## What Happens During TypeScript Compilation?
-
-When TypeScript code is compiled, the compiler goes through a few important steps:
 
 1. **Parsing:** Reads the code and creates an internal structure called AST.
 2. **Binding:** Identifies variables, functions, and their relationships.
@@ -17,28 +13,24 @@ When TypeScript code is compiled, the compiler goes through a few important step
 4. **JavaScript Emission:** Converts TypeScript code into JavaScript files.
 
 ## What is tsconfig.json?
-
 The `tsconfig.json` file is used to configure a TypeScript project. It tells the TypeScript compiler how to compile and type-check the project's TypeScript files.
 
 ## TypeScript Project Structure
-
-A typical TypeScript project looks like this:
 
 ```text
 my-project/
 │
 ├── src/
-│   └── app.ts
+│   └── index.ts
 │
 ├── dist/
-│   └── app.js
+│   └── index.js
 │
 ├── node_modules/
 ├── package.json
 ├── tsconfig.json
 └── package-lock.json
 ```
-
 - `src/`: Contains TypeScript source files.
 - `dist/`: Stores compiled JavaScript files.
 - `node_modules/`: Contains installed dependencies.
@@ -74,7 +66,6 @@ Here is a simple example of `tsconfig.json`:
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-   
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
@@ -107,7 +98,6 @@ After configuring `tsconfig.json`, run:
 ```bash
 npx tsc
 ```
-
 The compiler reads the configuration file, checks the TypeScript files, and generates JavaScript files inside the `dist` directory.
 
 ## Conclusion
