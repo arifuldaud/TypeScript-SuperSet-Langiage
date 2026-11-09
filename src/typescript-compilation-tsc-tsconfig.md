@@ -9,12 +9,12 @@ TypeScript uses a tool called `tsc` (TypeScript Compiler) to handle this process
 
 ## What Happens During TypeScript Compilation?
 
-During compilation, the TypeScript compiler performs several important steps:
+When TypeScript code is compiled, the compiler goes through a few important steps:
 
-1. **Parsing:** Reads the TypeScript code and creates an internal structure called an Abstract Syntax Tree (AST).
-2. **Binding:** Connects declarations and identifies variables, functions, and their scopes.
-3. **Type Checking:** Checks types and reports errors when the code violates type rules.
-4. **JavaScript Emission:** Generates JavaScript files based on the compiler configuration.
+1. **Parsing:** Reads the code and creates an internal structure called AST.
+2. **Binding:** Identifies variables, functions, and their relationships.
+3. **Type Checking:** Checks the code for type errors.
+4. **JavaScript Emission:** Converts TypeScript code into JavaScript files.
 
 ## What is tsconfig.json?
 
@@ -80,7 +80,6 @@ Here is a simple example of `tsconfig.json`:
   "exclude": ["node_modules"]
 }
 ```
-
 ### Understand the Compiler Options
 
 - `target`: JavaScript output version.
